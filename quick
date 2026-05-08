@@ -1,0 +1,42 @@
+#include<iostream>
+using namespace std;
+int HoarePartition(int arr[],int low,int high)
+{
+   int pivot=arr[loq];
+   int i=low;
+   int j=high+1;
+   while(true)
+   {
+      do{
+         i++;
+      }while(arr[i]<pivot);
+      do{
+         j--;
+      }while(arr[j]>pivot;
+      if(i>=j)
+      {
+         return j;
+         Swap(arr[i],arr[j])
+         }
+         }
+         void quicksort(int arr[],int low,int high)
+         {
+         if(low<high)
+         {
+         int p=hoarePartition(arr,low,high);
+         quicksort(arr,low,p);
+         quicksort(arr,pt1,high)
+         }
+         }
+         int main()
+         {
+         cout<<"Enter no of elements";
+         quicksort(arr,o,n-1);
+         cin>>n;
+         cout<<"Sorted array";
+         for(int i=0;i<n;i++)
+         {
+            cout<<arr[i]<<endl;
+         }
+         return0;
+         }

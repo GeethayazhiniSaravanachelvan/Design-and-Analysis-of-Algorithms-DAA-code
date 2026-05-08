@@ -1,0 +1,57 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+   int n,i;
+   int a[100];
+   cout<<"Enter no of elements"<<endl;
+   cin>>n;
+   cout<<"Enter elements"<<endl;
+   for(i=0;i<n;i++)
+   {
+      cin>>a[i];
+   }
+   mergesort(a,0,n-1);
+   for(i=0;i<n;i++)
+   {
+      cout<<a[i]<<"\t";
+   }
+   cout<<endl;
+}
+void merge(int a[n],int t),int m,int,n)
+{
+   int i=l;j=m+l;k=l;
+   int temp[100];
+   while(i<m&&j=n)
+   {
+      if(a[i]<=a[j])
+      {
+         temp[k+1]=a=[i++];
+      }
+      else
+      {
+         temp[k++]=a[j++];
+      }
+      while(i<=m)
+      {
+         temp[k++]=a[i++];
+      }
+      while(j<=n)
+      {
+         temp[k++]=a[j++];
+      }
+      for(i=1;i<=n;i++)
+      {
+         a[i]=temp[i];
+      }
+   }
+   void mergesort(inta[],int l,int n)
+   {
+      if(l<n)
+      {
+         int m =(l+n/2);
+         mergesort(a,l,m);
+         mergesort(a,m+1,n);
+         merge(a,l,m,n)
+      }
+   }
